@@ -1,6 +1,6 @@
 {
   "name": "WhatsAllApp Community Edition",
-  "version": "2.1",
+  "version": "2.2",
   "description": "UI overlay for WhatsApp Web to enumerate phone numbers, profile pics, online statuses and status texts.",
   "permissions": ["declarativeContent", "activeTab", "storage"  ],
   "background": {
@@ -8,7 +8,7 @@
     "persistent": false
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-  "web_accessible_resources" : ["/bundle.js","note.mp3"],
+  "web_accessible_resources" : ["/bundle.js","/online.mp3","/offline.mp3"],
   "manifest_version": 2,
   "page_action": {
     "default_popup": "popup.html",

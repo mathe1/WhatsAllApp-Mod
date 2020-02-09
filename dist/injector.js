@@ -96,6 +96,40 @@
 "use strict";
 eval("\n\nvar scr = document.createElement(\"script\");\nscr.id = 'whatsallapp-content-script';\nscr.type = 'text/javascript';\nscr.src = chrome.extension.getURL('/bundle.js');\n(document.head || document.body || document.documentElement).appendChild(scr);\n\nchrome.storage.sync.get('pluginEnabled', function (data) {\n    if (data.pluginEnabled) {\n        var rootEl = document.createElement('div');\n        rootEl.id = 'whatsallapp-root';\n        rootEl.setAttribute('data-extension-id', chrome.runtime.id);\n        document.body.appendChild(rootEl);\n    } else {}\n});\n\n//# sourceURL=webpack:///./src/injector.js?");
 
+
+// mathe1: find top10 phonenumbers and set for monitoring
+// under construction
+// https://github.com/ohari5336/WhatsAllApp-Mod/issues/2
+ 
+function getUrlVars(url) {
+//https://html-online.com/articles/get-url-parameters-javascript/
+    var vars = {};
+    var parts = url.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+function StartMonitoring() {
+ var pbc=document.getElementsByClassName("_3RWII");
+ var phn='';
+ for (let i=0;i<pbc.length;i++) {
+  var pburl=getUrlVars(pbc[0].firstElementChild.src)["u"];
+  if (pburl) phn+=pburl.substr(0,pburl.indexOf("%"))+',';
+  else {//no number at profilphoto - search deeper for phonenumber
+  }
+  if (phn.length>3) {
+   var ped=document.getElementById('mathe1edit');
+   if (ped) {
+    ped.value=phn.substr(0,phn.length-1);
+    ped.onchange();
+    document.getElementById('mathe1btn').click();
+   }     
+  }
+ }
+}
+//StartMonitoring();
+
 /***/ })
 
 /******/ });
