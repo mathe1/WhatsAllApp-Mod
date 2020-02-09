@@ -1,15 +1,21 @@
 # modified WhatsAllApp-Mod
 
 This is a more moded version of [WhatsAllApp](https://github.com/LoranKloeze/WhatsAllApp/) and moded by [#@R! ()M B@TR@ (ohari5336)](https://ohari5336.in)
-I changed only some little things in bundle.js
+Get the extension from Dist-folder.
 
 What's New in This WhatsAllApp-Mod Version:
 * added green background at selected contact whose online now
-* the log is more informative now and displaying every ~10 sec.:
+* the log is more informative now and displaying every ~10 sec.
+
+time> status contact name [phone number] is online 
  ``` 
- time> phonenumber [contact name] is online 
- 22:08:46> 4901234567890 [Tim] is online
+ 22:38:55> +++++ Tim [491234567890] is online
+ 22:39:06> 00:10 Tim [491234567890] is online
+ 22:39:17> ----- Tim left after 00:21
+(108) .
  ```
+If nobody is online, all 10 sec a dot is displayed to indicate activity. It counts up until something else happens.
+If you don't like the sounds, replace online.mp3 and offline.mp3 to your own sounds...
 
 #### How to do?
 
@@ -20,10 +26,10 @@ After you installed this chrome extension, start web.whatsapp.com and login at y
 
 #### Some known issues
 
-* Sometimes it seems necessary to update the list (search again). It may also be necessary to turn the phone back on in WhatsApp, otherwise the monitoring will stop. 
+* Sometimes a contact is permanently displayed and logged online even though it has been offline for a long time. Then it helps if the contact is selected directly (in the app or on the web) to update the status. Or the extension doesn't know anymore if someone has gone online. Also, if it was shorter than 10 sec. I don't know what this is related to, but when the contacts are "searched" again, it works again. 
+
 * Scrolling in contact list while a contact is online, the green status background will misplaced
 
-#### combine with this nice script
+#### combined with this nice script
 
-For me, I additional running in the console this little script of [WhatsappTracker](https://github.com/electronixxx/WhatsappTracker) to track a single contact.
-Maybe future version could implement this script...
+I was inspired by the script [WhatsappTracker](https://github.com/electronixxx/WhatsappTracker) to improve the log to track a single contact.
