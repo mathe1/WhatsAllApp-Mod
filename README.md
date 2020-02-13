@@ -1,10 +1,12 @@
 # modified WhatsAllApp-Mod
 
 This is a more moded version of [WhatsAllApp](https://github.com/LoranKloeze/WhatsAllApp/) and moded by [#@R! ()M B@TR@ (ohari5336)](https://ohari5336.in)
-Get the extension from Dist-folder.
+
+Get the extension only from /Dist-folder.
 
 What's New in This WhatsAllApp-Mod Version:
 * added green background at selected contact whose online now
+* added alert when phone is disconnected, and logging that
 * the log is more informative now and displaying every ~10 sec.
 
 time> status contact name [phone number] is online 
