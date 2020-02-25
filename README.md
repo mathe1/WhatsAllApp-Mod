@@ -4,7 +4,7 @@ This is a more moded version of [WhatsAllApp](https://github.com/LoranKloeze/Wha
 
 Get the extension only from /Dist-folder.
 
-What's New in This WhatsAllApp-Mod Version (now 2.30):
+What's New in This WhatsAllApp-Mod Version (now 2.31):
 * added green background at selected contact whose online now
 * added alert.mp3 when phone is disconnected, and logging that
 * the log is more informative now and displaying every variable period sec.
