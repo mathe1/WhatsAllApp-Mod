@@ -1,7 +1,9 @@
 # modified WhatsAllApp-Mod
 
-## Unfortunately, due to a change in the code of Whatsapp, this extension no longer runs. I hope it can be fixed soon...
-#### As long as there is no solution in sight, you can still track a single contact by [Tracker](https://github.com/mathe1/WhatsappTracker) - Simple Tracker is now implemented.
+#### Unfortunately, due to a change in the code of Whatsapp, this extension no longer runs. I hope it can be fixed soon...
+## As long as there is no solution in sight, you can still track a single contact by [WhatsAppOnlineTracker](https://github.com/mathe1/WhatsAppOnlineTracker) - my rebuilt project!
+
+### Forgot the rest on this page ...
 
 This is a more moded version of [WhatsAllApp](https://github.com/LoranKloeze/WhatsAllApp/) and moded by [#@R! ()M B@TR@ (ohari5336)](https://ohari5336.in)
 
